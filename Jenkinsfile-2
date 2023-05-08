@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'ansiblenodes' }
   environment {
-   ANSIBLE_PRIVATE_KEY=credentials('ec2instance-private-key') 
+   ANSIBLE_PRIVATE_KEY=credentials('mariadb-private-key') 
   }
   stages {
     stage('Hello') {
